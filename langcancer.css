@@ -1,0 +1,43 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title1{
+    text-align: center;
+}
+
+#mabn{
+    text-align: right;
+}
+
+#ima{
+    height: 110px;
+    line-height: 110px;
+    background-color: #1975ff;
+    float: left;
+    
+}
+
+
+.banner{
+   
+    height: 110px;
+    line-height: 110px;
+    background-color: #1975ff;
+    color: white;
+}
