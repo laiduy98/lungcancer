@@ -46,9 +46,6 @@
 
 
 
-   
-    
-  
 
 
 
@@ -56,305 +53,414 @@
 
 
 
-        <!-- phần1 -->
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan1">Phần 1: Hành chính:</button>
-        <div id="phan1" class="collapse">
 
-            <li>
 
-                <label>Họ tên bệnh nhân: </label>
-                <input type="text" id="hovaten">
 
-            </li>
-            <br>
-            <li>
-                <label>Tuổi: </label>
-                <input type="text" id="tuoi" maxlength="4" size="4">
-            </li>
-            <br>
-            <li>
-                <label>Giới tính: </label>
-                <select id="gioitinh">
-                    <option>Nam</option>
-                    <option>Nữ</option>
-                </select>
-            </li>
-            <br>
-            <li>
-                <label>Nghề nghiệp: </label>
-                <input type="text" id="nghe">
-            </li>
-            <br>
-            <li>
-                <label>Địa chỉ: </label>
-                <input type="text" id="diachi" size="50">
-            </li>
-            <br>
-            <li>
-                <label>Số điện thoại: </label>
-                <input type="number" id="sdt">
-            </li>
-            <br>
-            <li>
-                <label>Mã bệnh án: </label>
-                <input type="text" id="mabenhan">
-            </li>
+    <!-- phần1 -->
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan1">Phần 1: Hành chính:</button>
+    <div id="phan1" class="collapse">
 
+        <li>
+
+            <label>Họ tên bệnh nhân: </label>
+            <input type="text" id="hovaten">
+
+        </li>
+        <br>
+        <li>
+            <label>Tuổi: </label>
+            <input type="text" id="tuoi" maxlength="4" size="4">
+        </li>
+        <br>
+        <li>
+            <label>Giới tính: </label>
+            <select id="gioitinh">
+                <option>Nam</option>
+                <option>Nữ</option>
+            </select>
+        </li>
+        <br>
+        <li>
+            <label>Nghề nghiệp: </label>
+            <input type="text" id="nghe">
+        </li>
+        <br>
+        <li>
+            <label>Địa chỉ: </label>
+            <input type="text" id="diachi" size="50">
+        </li>
+        <br>
+        <li>
+            <label>Số điện thoại: </label>
+            <input type="number" id="sdt">
+        </li>
+        <br>
+        <li>
+            <label>Mã bệnh án: </label>
+            <input type="text" id="mabenhan">
+        </li>
+
+    </div>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <!-- phần 2 -->
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan2">Phần 2: Lâm sàng:</button>
+    <div id="phan2" class="collapse">
+        <h3>1.Tiền sử</h3>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hút thuốc lá (bao năm: <input type="text" id="namhut" size="3">)</li>
+                </td>
+                <td><input type="checkbox" id="hutthuock"></td>
+                <td><input type="checkbox" id="hutthuocc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tiếp xúc hóa chất:</li>
+                </td>
+                <td><input type="checkbox" id="hoachatk"></td>
+                <td><input type="checkbox" id="hoachatc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Lao phổi:</li>
+                </td>
+                <td><input type="checkbox" id="laophoik"></td>
+                <td><input type="checkbox" id="laophoic"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>COPD:</li>
+                </td>
+                <td><input type="checkbox" id="copdk"></td>
+                <td><input type="checkbox" id="copd"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Gia đình:</li>
+                </td>
+                <td><input type="checkbox" id="giadinhk"></td>
+                <td><input type="checkbox" id="giadinhc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Bệnh lý:</li>
+                </td>
+                <td><input type="checkbox" id="benhlyk"></td>
+                <td><input type="checkbox" id="benhlyc"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h3>2. Triệu chứng lâm sàng: </h3>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>Ho:</li>
+                </td>
+                <td><input type="checkbox" id="hok"></td>
+                <td><input type="checkbox" id="hoc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Ho máu</li>
+                </td>
+                <td><input type="checkbox" id="mauk"></td>
+                <td><input type="checkbox" id="mauc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Đau ngực</li>
+                </td>
+                <td><input type="checkbox" id="nguck"></td>
+                <td><input type="checkbox" id="ngucc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Khó thở</li>
+                </td>
+                <td><input type="checkbox" id="khothok"></td>
+                <td><input type="checkbox" id="khothoc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Khàn tiếng</li>
+                </td>
+                <td><input type="checkbox" id="khantiengk"></td>
+                <td><input type="checkbox" id="khantiengc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>H/c Pancoast</li>
+                </td>
+                <td><input type="checkbox" id="pank"></td>
+                <td><input type="checkbox" id="panc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Sốt</li>
+                </td>
+                <td><input type="checkbox" id="sotk"></td>
+                <td><input type="checkbox" id="sotc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Gầy sút cân</li>
+                </td>
+                <td><input type="checkbox" id="gayk"></td>
+                <td><input type="checkbox" id="gayc"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h3>3. Hội chứng cận u </h3>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>Hội chứng Cushing</li>
+                </td>
+                <td><input type="checkbox" id="cushingk"></td>
+                <td><input type="checkbox" id="cushingc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hội chứng nhược cơ Lambert-Eaton</li>
+                </td>
+                <td><input type="checkbox" id="nhuoccok"></td>
+                <td><input type="checkbox" id="nhuoccoc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hội chứng tiết ADH không thích hợp</li>
+                </td>
+                <td><input type="checkbox" id="adhk"></td>
+                <td><input type="checkbox" id="adhc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tăng Calci máu</li>
+                </td>
+                <td><input type="checkbox" id="calcik"></td>
+                <td><input type="checkbox" id="calcic"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Phì đại đâu xương</li>
+                </td>
+                <td><input type="checkbox" id="phixuongk"></td>
+                <td><input type="checkbox" id="phixuongc"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h3>4. Triệu chứng khác</h3>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+        <br>
+        <br>
+        <h3>5. Bệnh lí phốí hợp</h3>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+
+    </div>
+    <br>
+    <br>
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan3">Phần 3: CLVT đa
+        dãy:</button>
+    <div id="phan3" class="collapse">
+        <p><b>1. Phân loại tổn thương</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="mochuyeu">
+            <label class="custom-control-label" for="mochuyeu">Kính mờ chủ yếu</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="modac">
+            <label class="custom-control-label" for="modac">Kính mờ và đặc</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="dacchuyeu">
+            <label class="custom-control-label" for="dacchuyeu">Phần đặc chiếm chủ yếu</label>
+        </div>
+        <p><b>2. Vị trí</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuytrenphai">
+            <label class="custom-control-label" for="thuytrenphai">Thùy trên phải</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuygiuapp">
+            <label class="custom-control-label" for="thuygiuap">Thùy giữa phải</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuyduoip">
+            <label class="custom-control-label" for="thuyduoip">Thùy dưới phải</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuytrent">
+            <label class="custom-control-label" for="thuytrent">Thùy trên trái</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuyduoit">
+            <label class="custom-control-label" for="thuyduoit">Thùy dưới trái</label>
+        </div>
+        <p><b>3. Kích thước:</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="đơn vị: mm" name="text2">
+        </div>
+        <p><b>4. Thể:</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="trungtam">
+            <label class="custom-control-label" for="trungtam">Trung tâm</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="ngoaivi">
+            <label class="custom-control-label" for="ngoaivi">Ngoại vi</label>
+        </div>
+        <p><b>5. Đường bờ</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="bodeu">
+            <label class="custom-control-label" for="bodeu">Bờ đều</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="bokdeu">
+            <label class="custom-control-label" for="bokdeu">Bờ không đều</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thuymui">
+            <label class="custom-control-label" for="thuymui">Thùy múi</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="tuagai">
+            <label class="custom-control-label" for="tuagai">Tua gai</label>
         </div>
 
-        <br>
-        <br>
-        <!-- phần 2 -->
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan2">Phần 2: Lâm sàng:</button>
-        <div id="phan2" class="collapse">
-            <h3>1.Tiền sử</h3>
-            <table class="table table-striped">
-                <tr>
-                    <th></th>
-                    <th>Không</th>
-                    <th>Có</th>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Hút thuốc lá (bao năm: <input type="text" id="namhut" size="3">)</li>
-                    </td>
-                    <td><input type="checkbox" id="hutthuock"></td>
-                    <td><input type="checkbox" id="hutthuocc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Tiếp xúc hóa chất:</li>
-                    </td>
-                    <td><input type="checkbox" id="hoachatk"></td>
-                    <td><input type="checkbox" id="hoachatc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Lao phổi:</li>
-                    </td>
-                    <td><input type="checkbox" id="laophoik"></td>
-                    <td><input type="checkbox" id="laophoic"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>COPD:</li>
-                    </td>
-                    <td><input type="checkbox" id="copdk"></td>
-                    <td><input type="checkbox" id="copd"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Gia đình:</li>
-                    </td>
-                    <td><input type="checkbox" id="giadinhk"></td>
-                    <td><input type="checkbox" id="giadinhc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Bệnh lý:</li>
-                    </td>
-                    <td><input type="checkbox" id="benhlyk"></td>
-                    <td><input type="checkbox" id="benhlyc"></td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <h3>2. Triệu chứng lâm sàng: </h3>
-            <table class="table table-striped">
-                <tr>
-                    <th></th>
-                    <th>Không</th>
-                    <th>Có</th>
+        <h3>6. Đặc điểm hình ảnh </h3>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
 
-                </tr>
-                <tr>
-                    <td>
-                        <li>Ho:</li>
-                    </td>
-                    <td><input type="checkbox" id="hok"></td>
-                    <td><input type="checkbox" id="hoc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Ho máu</li>
-                    </td>
-                    <td><input type="checkbox" id="mauk"></td>
-                    <td><input type="checkbox" id="mauc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Đau ngực</li>
-                    </td>
-                    <td><input type="checkbox" id="nguck"></td>
-                    <td><input type="checkbox" id="ngucc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Khó thở</li>
-                    </td>
-                    <td><input type="checkbox" id="khothok"></td>
-                    <td><input type="checkbox" id="khothoc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Khàn tiếng</li>
-                    </td>
-                    <td><input type="checkbox" id="khantiengk"></td>
-                    <td><input type="checkbox" id="khantiengc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>H/c Pancoast</li>
-                    </td>
-                    <td><input type="checkbox" id="pank"></td>
-                    <td><input type="checkbox" id="panc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Sốt</li>
-                    </td>
-                    <td><input type="checkbox" id="sotk"></td>
-                    <td><input type="checkbox" id="sotc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Gầy sút cân</li>
-                    </td>
-                    <td><input type="checkbox" id="gayk"></td>
-                    <td><input type="checkbox" id="gayc"></td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <h3>3. Hội chứng cận u </h3>
-            <table class="table table-striped">
-                <tr>
-                    <th></th>
-                    <th>Không</th>
-                    <th>Có</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Kích thước > 3cm</li>
+                </td>
+                <td><input type="checkbox" id="3cmc"></td>
+                <td><input type="checkbox" id="3cmk"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Bờ tua gai, đa thùy</li>
+                </td>
+                <td><input type="checkbox" id="bogaik"></td>
+                <td><input type="checkbox" id="bogaic"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Dấu hiệu đuôi màng phổi</li>
+                </td>
+                <td><input type="checkbox" id="nguck"></td>
+                <td><input type="checkbox" id="ngucc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Vôi hóa vô định hình</li>
+                </td>
+                <td><input type="checkbox" id="khothok"></td>
+                <td><input type="checkbox" id="khothoc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Dấu hiệu mạch nuôi</li>
+                </td>
+                <td><input type="checkbox" id="khantiengk"></td>
+                <td><input type="checkbox" id="khantiengc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Chèn ép phế quản</li>
+                </td>
+                <td><input type="checkbox" id="pank"></td>
+                <td><input type="checkbox" id="panc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hình hang vỏ dày không đều, vị trí dày nhất > 16cm</li>
+                </td>
+                <td><input type="checkbox" id="sotk"></td>
+                <td><input type="checkbox" id="sotc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tăng kích thước (x2 từ 1-18 tháng)</li>
+                </td>
+                <td><input type="checkbox" id="gayk"></td>
+                <td><input type="checkbox" id="gayc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tổn thương xẹp phổi hoặc đông đặc đi kèm</li>
+                </td>
+                <td><input type="checkbox" id="gayk"></td>
+                <td><input type="checkbox" id="gayc"></td>
+            </tr>
+        </table>
 
-                </tr>
-                <tr>
-                    <td>
-                        <li>Hội chứng Cushing</li>
-                    </td>
-                    <td><input type="checkbox" id="cushingk"></td>
-                    <td><input type="checkbox" id="cushingc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Hội chứng nhược cơ Lambert-Eaton</li>
-                    </td>
-                    <td><input type="checkbox" id="nhuoccok"></td>
-                    <td><input type="checkbox" id="nhuoccoc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Hội chứng tiết ADH không thích hợp</li>
-                    </td>
-                    <td><input type="checkbox" id="adhk"></td>
-                    <td><input type="checkbox" id="adhc"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Tăng Calci máu</li>
-                    </td>
-                    <td><input type="checkbox" id="calcik"></td>
-                    <td><input type="checkbox" id="calcic"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <li>Phì đại đâu xương</li>
-                    </td>
-                    <td><input type="checkbox" id="phixuongk"></td>
-                    <td><input type="checkbox" id="phixuongc"></td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <h3>4. Triệu chứng khác</h3>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
-            <br>
-            <br>
-            <h3>5. Bệnh lí phốí hợp</h3>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <br>
+    <br>
+    <!-- phần 4 -->
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan4">Phần 4: Các xét
+        nghiệm khác:</button>
+    <div id="phan4" class="collapse">
 
-        </div>
-        <br>
-        <br>
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan3">Phần 3: CLVT đa
-            dãy:</button>
-        <div id="phan3" class="collapse">
-            <p><b>1. Phân loại tổn thương</b></p>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="mochuyeu">
-                <label class="custom-control-label" for="mochuyeu">Kính mờ chủ yếu</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="modac">
-                <label class="custom-control-label" for="modac">Kính mờ và đặc</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="dacchuyeu">
-                <label class="custom-control-label" for="dacchuyeu">Phần đặc chiếm chủ yếu</label>
-            </div>
-            <p><b>2. Vị trí</b></p>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="thuytrenphai">
-                <label class="custom-control-label" for="thuytrenphai">Thùy trên phải</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="thuygiuapp">
-                <label class="custom-control-label" for="thuygiuap">Thùy giữa phải</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="thuyduoip">
-                <label class="custom-control-label" for="thuyduoip">Thùy dưới phải</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="thuytrent">
-                <label class="custom-control-label" for="thuytrent">Thùy trên trái</label>
-            </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="thuyduoit">
-                <label class="custom-control-label" for="thuyduoit">Thùy dưới trái</label>
-            </div>
-            <p><b>3. Kích thước:</b></p>
-            <label></label>
+    </div>
+    <br>
+    <br>
+    <!-- phần 5 -->
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan5">Phần 5: Sinh thiết
+        kim cắt qua da dưới hướng dẫn CLVT:</button>
+    <div id="phan5" class="collapse">
 
-
-        </div>
-        <br>
-        <br>
-        <!-- phần 4 -->
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan4">Phần 4: Các xét
-            nghiệm khác:</button>
-        <div id="phan4" class="collapse">
-
-        </div>
-        <br>
-        <br>
-        <!-- phần 5 -->
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan5">Phần 5: Sinh thiết
-            kim cắt qua da dưới hướng dẫn CLVT:</button>
-        <div id="phan5" class="collapse">
-
-        </div>
-        <br>
-        <br>
-        <!-- phần 6 -->
-        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan6">Phần 6: Điều trị:</button>
-        <div id="phan6" class="collapse">
+    </div>
+    <br>
+    <br>
+    <!-- phần 6 -->
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan6">Phần 6: Điều trị:</button>
+    <div id="phan6" class="collapse">
 
 
 
 
 
 
-        </div>
+    </div>
 
-    
-    
+
+
 
 
     </div>
