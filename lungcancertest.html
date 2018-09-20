@@ -288,6 +288,9 @@
     </div>
     <br>
     <br>
+
+
+    <!-- phần 3 -->
     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan3">Phần 3: CLVT đa
         dãy:</button>
     <div id="phan3" class="collapse">
@@ -327,7 +330,7 @@
         </div>
         <p><b>3. Kích thước:</b></p>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="đơn vị: mm" name="text2">
+            <input type="text" class="form-control" placeholder="đơn vị: mm" name="dv"">
         </div>
         <p><b>4. Thể:</b></p>
         <div class="custom-control custom-checkbox mb-3">
@@ -366,10 +369,10 @@
             </tr>
             <tr>
                 <td>
-                    <li>Kích thước > 3cm</li>
+                    <li>Kích thước lớn hơn 3cm</li>
                 </td>
-                <td><input type="checkbox" id="3cmc"></td>
-                <td><input type="checkbox" id="3cmk"></td>
+                <td><input type="checkbox" id="cmk"></td>
+                <td><input type="checkbox" id="cmc"></td>
             </tr>
             <tr>
                 <td>
@@ -382,53 +385,241 @@
                 <td>
                     <li>Dấu hiệu đuôi màng phổi</li>
                 </td>
-                <td><input type="checkbox" id="nguck"></td>
-                <td><input type="checkbox" id="ngucc"></td>
+                <td><input type="checkbox" id="duoimangphoik"></td>
+                <td><input type="checkbox" id="duoimangphoic"></td>
             </tr>
             <tr>
                 <td>
                     <li>Vôi hóa vô định hình</li>
                 </td>
-                <td><input type="checkbox" id="khothok"></td>
-                <td><input type="checkbox" id="khothoc"></td>
+                <td><input type="checkbox" id="voihoacodinhhinhk"></td>
+                <td><input type="checkbox" id="voihoacodinhhinhc"></td>
             </tr>
             <tr>
                 <td>
                     <li>Dấu hiệu mạch nuôi</li>
                 </td>
-                <td><input type="checkbox" id="khantiengk"></td>
-                <td><input type="checkbox" id="khantiengc"></td>
+                <td><input type="checkbox" id="dauhieumachnuoik"></td>
+                <td><input type="checkbox" id="dauhieumachnuoic"></td>
             </tr>
             <tr>
                 <td>
                     <li>Chèn ép phế quản</li>
                 </td>
-                <td><input type="checkbox" id="pank"></td>
-                <td><input type="checkbox" id="panc"></td>
+                <td><input type="checkbox" id="chenepphequank"></td>
+                <td><input type="checkbox" id="chenepphequanc"></td>
             </tr>
             <tr>
                 <td>
                     <li>Hình hang vỏ dày không đều, vị trí dày nhất > 16cm</li>
                 </td>
-                <td><input type="checkbox" id="sotk"></td>
-                <td><input type="checkbox" id="sotc"></td>
+                <td><input type="checkbox" id="hangkdeuk"></td>
+                <td><input type="checkbox" id="hangkdeuc"></td>
             </tr>
             <tr>
                 <td>
                     <li>Tăng kích thước (x2 từ 1-18 tháng)</li>
                 </td>
-                <td><input type="checkbox" id="gayk"></td>
-                <td><input type="checkbox" id="gayc"></td>
+                <td><input type="checkbox" id="tangkichk"></td>
+                <td><input type="checkbox" id="tangkichc"></td>
             </tr>
             <tr>
                 <td>
                     <li>Tổn thương xẹp phổi hoặc đông đặc đi kèm</li>
                 </td>
-                <td><input type="checkbox" id="gayk"></td>
-                <td><input type="checkbox" id="gayc"></td>
+                <td><input type="checkbox" id="tonthuongxepk"></td>
+                <td><input type="checkbox" id="tonthuongxepc"></td>
             </tr>
         </table>
 
+        <p><b>7. Mức độ ngấm thuốc</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="dongdeu">
+            <label class="custom-control-label" for="dongdeu">Đồng đều</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="kdongdeu">
+            <label class="custom-control-label" for="kdongdeu">Không đồng đều</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="ngoaivi7">
+            <label class="custom-control-label" for="ngoaivi7">Ngoại vi</label>
+        </div>
+
+        <h3>8. Đặc điểm lan rộng của khối u </h3>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>Khu trú trong nhu mô</li>
+                </td>
+                <td><input type="checkbox" id="kttnhk"></td>
+                <td><input type="checkbox" id="kttnhc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn lá tạng màng phổi</li>
+                </td>
+                <td><input type="checkbox" id="xlltmpk"></td>
+                <td><input type="checkbox" id="xlltmpc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn phế quản thùy</li>
+                </td>
+                <td><input type="checkbox" id="xlpqtk"></td>
+                <td><input type="checkbox" id="xlpqtc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn phế quản gốc</li>
+                </td>
+                <td><input type="checkbox" id="xlpqgk"></td>
+                <td><input type="checkbox" id="xlpqgc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn thành ngực</li>
+                </td>
+                <td><input type="checkbox" id="xltnk"></td>
+                <td><input type="checkbox" id="xltnc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn cơ hoành</li>
+                </td>
+                <td><input type="checkbox" id="xlchk"></td>
+                <td><input type="checkbox" id="xlchc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Liệt thân kinh hoành T</li>
+                </td>
+                <td><input type="checkbox" id="ltkhtk"></td>
+                <td><input type="checkbox" id="ltkhtc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn màng phổi trung thất</li>
+                </td>
+                <td><input type="checkbox" id="xlmpttk"></td>
+                <td><input type="checkbox" id="xlmpttc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn lá thành màng ngoài tim</li>
+                </td>
+                <td><input type="checkbox" id="xlltmntk"></td>
+                <td><input type="checkbox" id="xlltmntc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Nốt cùng bên cùng thùy</li>
+                </td>
+                <td><input type="checkbox" id="ncbctk"></td>
+                <td><input type="checkbox" id="ncbctc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Xâm lấn trung thất, cs, carina...</li>
+                </td>
+                <td><input type="checkbox" id=""></td>
+                <td><input type="checkbox" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tràn dịch màng phổi(1 bên, 2 bên)</li>
+                </td>
+                <td><input type="checkbox" id="tdmpk"></td>
+                <td><input type="checkbox" id="tdmpc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Nốt cùng bên, khác thùy</li>
+                </td>
+                <td><input type="checkbox" id="ncbktk"></td>
+                <td><input type="checkbox" id="ncbktc"></td>
+            </tr>
+        </table>
+
+
+        <p><b>9. Hạch trung thất: nhóm hạch:</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="n0">
+            <label class="custom-control-label" for="n0">N0</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="n1">
+            <label class="custom-control-label" for="n1">N1</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="n2">
+            <label class="custom-control-label" for="n2">N2</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="n4">
+            <label class="custom-control-label" for="n4">N4</label>
+        </div>
+
+
+        <p><b>10. Di căn</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="m0">
+            <label class="custom-control-label" for="m0">M0</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="m1a">
+            <label class="custom-control-label" for="m1a">M1a</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="m1b">
+            <label class="custom-control-label" for="m1b">M1b</label>
+        </div>
+        <p><b>11. Chẩn đoán tính chất:</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="lanh">
+            <label class="custom-control-label" for="lanh">Lành tính</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="actru">
+            <label class="custom-control-label" for="actru">Ác tính _+</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="accong">
+            <label class="custom-control-label" for="accong">Ác tính +</label>
+        </div>
+
+
+        <p><b>12. Phân loại giai đoạn theo T.N.M</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="i">
+            <label class="custom-control-label" for="i">I</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="iia">
+            <label class="custom-control-label" for="iia">IIA</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="iib">
+            <label class="custom-control-label" for="iib">IIB</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="iiia">
+            <label class="custom-control-label" for="iiia">IIIA</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="iiib">
+            <label class="custom-control-label" for="iiib">IIIB</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="iv">
+            <label class="custom-control-label" for="iv">IV</label>
+        </div>
     </div>
     <br>
     <br>
@@ -437,13 +628,140 @@
         nghiệm khác:</button>
     <div id="phan4" class="collapse">
 
+        <p><b>1. Huyết học</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Hb" name="hb">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="BC" name="bc">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="TC" name="tc">
+        </div>
+        <p><b>2. Miễn dịch</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="CEA" name="bc">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="TC" name="tc">
+        </div>
+
+        <p><b>3. Nội soi phế quản</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="kthaybtthuong">
+            <label class="custom-control-label" for="kthaybtthuong">Không thấy bất thường</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thamnhiem">
+            <label class="custom-control-label" for="thamnhiem">Thâm nhiễm</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="usui">
+            <label class="custom-control-label" for="usui">U sùi</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="chithep">
+            <label class="custom-control-label" for="chithep">Chít hẹp</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="xunghuyet">
+            <label class="custom-control-label" for="xunghuyet">Xung huyết</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="chaymau">
+            <label class="custom-control-label" for="chaymau">Chảy máu</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="hinhanhkhac">
+            <label class="custom-control-label" for="hinhanhkhac">Hình ảnh khác</label>
+        </div>
+
+        <p><b>4. Chức năng hô hấp</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="tacnghen">
+            <label class="custom-control-label" for="tacnghen">RLTK tắc nghẽn</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="hanche">
+            <label class="custom-control-label" for="hanche">RLTK hạn chế</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="binhthuong">
+            <label class="custom-control-label" for="binhthuong">Bình thường</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="honhop">
+            <label class="custom-control-label" for="honhop">Hỗn hợp</label>
+        </div>
+
     </div>
     <br>
     <br>
+
+
+
     <!-- phần 5 -->
     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#phan5">Phần 5: Sinh thiết
         kim cắt qua da dưới hướng dẫn CLVT:</button>
     <div id="phan5" class="collapse">
+
+        <p><b>1. Số lần sinh thiết</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="1l">
+            <label class="custom-control-label" for="1l">1 lần</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="2l">
+            <label class="custom-control-label" for="2l">2 lần</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="l2l">
+            <label class="custom-control-label" for="l2l">Lớn hơn 2 lần</label>
+        </div>
+
+
+        <p><b>2. Loại kim sinh thiết</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="16G">
+            <label class="custom-control-label" for="16G">16G</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="18G">
+            <label class="custom-control-label" for="18G">18G</label>
+        </div>
+
+        <p><b>3. Số lượng mẫu bệnh phẩm</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="2m">
+            <label class="custom-control-label" for="2m">2 mảnh</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="3m">
+            <label class="custom-control-label" for="3m">3 mảnh</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="l3m">
+            <label class="custom-control-label" for="l3m">Lớn hơn 3 mảnh</label>
+        </div>
+
+        <p><b>4. Đặc điểm nhu mô trên đường đi</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="bt">
+            <label class="custom-control-label" for="bt">Bình thường</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="thamnhiem">
+            <label class="custom-control-label" for="thamnhiem">Thâm nhiễm - giảm thông khí</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="giamphenang">
+            <label class="custom-control-label" for="gianphenang">Giãn phế nang - bẫy khí</label>
+        </div>
+        <p><b>Khoảng cách từ da vaò tổn thương</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="mm" name="kctudavaotonthuong">
+        </div>
+
 
     </div>
     <br>
