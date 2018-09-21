@@ -1,0 +1,76 @@
+<form action="#" id="userForm" name="form">             
+                
+                                <div class="userDtls" style="width:30%;float:left">                                                     
+                        <fieldset class="clearfloat" style="width:30%">
+                                        <legend class="sub-nav-header">user Details</legend>
+                                <div class="">
+                                        <div ><b>user Name:</b><span class="compulsory">*</span></div>          
+                                        <div ><input type="text" class="input-large mandatory" name="name" maxlength="30" /></div>
+                                        <div class="hide">
+                                                <div class="error error-msg hide-error" id="name">Enter user Name</div>
+                                        </div>
+                                </div>  
+                                <div class="">                                                                                                                  
+                                        <div ><b>Company name:<span class="compulsory">*</span></b></div>
+                                        <div ><input type="text" class="input-large mandatory" name="company"/></div>
+                                        <div class="hide">
+                                                <div class="error error-msg hide-error" id="company">Enter Company Name</div>
+                                        </div>          
+                                </div>          
+                                <div class="">
+                                        <div ><b>Description:</b></div>
+                                        <div ><textarea name="description"></textarea></div>
+                                </div>
+                                </fieldset>
+                        </div>
+                        
+                        
+                        <div class="useroutDtls" style="width:33%;float:left">                                                  
+                        <fieldset class="clearfloat">
+                                        <legend class="sub-nav-header">Department</legend>
+                                        <div class="vertex-services">
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked >HR
+                                                </label>
+                                                
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked >FINANCE
+                                                </label>
+
+                                                
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked>ACCOUNTS
+                                                </label>
+                                        </div>                                  
+                                </fieldset>                     
+       </div>                           
+                        
+                                <div class="useroutDtls" style="width:34%;float:left">                                                  
+                        <fieldset class="clearfloat">
+                                        <legend class="sub-nav-header">User Login</legend>
+                                        <div class="vertex-services">
+                                                
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked >Last Five Passwords                                            
+                                                </label>
+                                                
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked >Simulataneous Session
+                                                </label>
+
+                                                
+                                                <label class="checkbox ">
+                                                        <input type="checkbox"  checked>Invalid Login Attempts
+                                                </label>
+                                                
+                                        </div>                                  
+                                </fieldset>                             
+                        </div>
+                        
+                        
+                        <span class="pull-right" style="margin-top:90px">
+                                <a class="btn-disabled newuser">Create user</a>
+                                <a class="btn-cancel canceluser">Clear</a>&nbsp;&nbsp;
+                        </span>
+                        <br />
+                </form>

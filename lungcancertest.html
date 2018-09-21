@@ -757,10 +757,225 @@
             <input type="checkbox" class="custom-control-input" id="giamphenang">
             <label class="custom-control-label" for="gianphenang">Giãn phế nang - bẫy khí</label>
         </div>
-        <p><b>Khoảng cách từ da vaò tổn thương</b></p>
+        <p><b>5. Khoảng cách từ da vào tổn thương</b></p>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="mm" name="kctudavaotonthuong">
+            <input type="text" class="form-control" placeholder="đơn vị: mm" name="kctudavaotonthuong">
         </div>
+        <p><b>6. Khoảng cách đi trong nhu màng phổi</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="đơn vị: mm" name="kcditrongnhumangphoi">
+        </div>
+        <p><b>7. Góc màng phổi - kim sinh thiết</b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="đơn vị: độ" name="gocmangphoi">
+        </div>
+
+        <p><b>8. Qua màng phổi</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="co">
+            <label class="custom-control-label" for="co">Có</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="ko">
+            <label class="custom-control-label" for="ko">Không</label>
+        </div>
+
+        <p><b>9. Chuyển hướng trong nhu mô</b></p>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="co1">
+            <label class="custom-control-label" for="co1">Có</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="ko1">
+            <label class="custom-control-label" for="ko1">Không</label>
+        </div>
+
+        <p><b>10. Thời gian sinh thiết<Th>
+        </Th></b></p>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="đơn vị: phút" name="gocmangphoi">
+        </div>
+
+
+
+        <p><b>11. Kết quả mô bệnh học: Mã GPB</b></p>
+
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Adenocarcinoma">
+            <label class="custom-control-label" for="Adenocarcinoma">Adenocarcinoma</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Bronchoalveolar">
+            <label class="custom-control-label" for="Bronchoalveolar">Bronchoalveolar</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Squamouscellcarcinoma">
+            <label class="custom-control-label" for="Squamouscellcarcinoma">Squamous cell carcinoma</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Smallcelllungcancer">
+            <label class="custom-control-label" for="Smallcelllungcancer">Small cell lung cancer</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Adenosquamouscarcinoma">
+            <label class="custom-control-label" for="Adenosquamouscarcinoma">Adenosquamous carcinoma</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Largecellcarcinoma">
+            <label class="custom-control-label" for="Largecellcarcinoma">Large cell carcinoma</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Carcinoidtumour">
+            <label class="custom-control-label" for="Carcinoidtumour">Carcinoid tumour</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Actinhkhac">
+            <label class="custom-control-label" for="Actinhkhac">Ác tính khác</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Hamartoma">
+            <label class="custom-control-label" for="Hamartoma">Hamartoma</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Ubieumo">
+            <label class="custom-control-label" for="Ubieumo">U biểu mô</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Utrungmo">
+            <label class="custom-control-label" for="Utrungmo">U trung mô</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Uviem">
+            <label class="custom-control-label" for="Uviem">U viêm, hoại tử</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="Lanhtinhkhac">
+            <label class="custom-control-label" for="Lanhtinhkhac">Lành tính khác</label>
+        </div>
+        
+        <p><b>12. Biến chứng sau khi sinh thiết</b></p>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>Không biến chứng</li>
+                </td>
+                <td><input type="checkbox" id="kbienchungk"></td>
+                <td><input type="checkbox" id="kbienchungc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>TKMP không triệu chứng</li>
+                </td>
+                <td><input type="checkbox" id="kotrieuchungk"></td>
+                <td><input type="checkbox" id="kotrieuchungc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>TKMP có triệu chứng</li>
+                </td>
+                <td><input type="checkbox" id="cotrieuchungk"></td>
+                <td><input type="checkbox" id="cotrieuchungc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>TMMP</li>
+                </td>
+                <td><input type="checkbox" id="tmmpk"></td>
+                <td><input type="checkbox" id="tmmpc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Chảy máu nhu mô</li>
+                </td>
+                <td><input type="checkbox" id="chaymaunhumok"></td>
+                <td><input type="checkbox" id="chaymaunhumoc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Ho máu</li>
+                </td>
+                <td><input type="checkbox" id="homau1k"></td>
+                <td><input type="checkbox" id="homau1c"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Tử vong</li>
+                </td>
+                <td><input type="checkbox" id="tuvongk"></td>
+                <td><input type="checkbox" id="tuvongc"></td>
+            </tr>
+            
+        </table>
+        
+
+        <p><b>13. Xử lí biến chứng</b></p>
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>Không</th>
+                <th>Có</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <li>Không xử lý - theo dõi</li>
+                </td>
+                <td><input type="checkbox" id="kxulyk"></td>
+                <td><input type="checkbox" id="kxulyc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Hút khí MP dưới hướng dẫn CLVT</li>
+                </td>
+                <td><input type="checkbox" id="hutkhik"></td>
+                <td><input type="checkbox" id="hutkhic"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Dẫn lưu màng phổi</li>
+                </td>
+                <td><input type="checkbox" id="danluuk"></td>
+                <td><input type="checkbox" id="danluuc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Thở oxy</li>
+                </td>
+                <td><input type="checkbox" id="thooxyk"></td>
+                <td><input type="checkbox" id="thooxyc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Truyền dịch</li>
+                </td>
+                <td><input type="checkbox" id="truyendichk"></td>
+                <td><input type="checkbox" id="truyendichc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Truyền máu</li>
+                </td>
+                <td><input type="checkbox" id="truyenmauk"></td>
+                <td><input type="checkbox" id="truyenmauc"></td>
+            </tr>
+            <tr>
+                <td>
+                    <li>Phẫu thuật cấp cứu</li>
+                </td>
+                <td><input type="checkbox" id="ptcapcuuk"></td>
+                <td><input type="checkbox" id="ptcapcuuc"></td>
+            </tr>
+            
+        </table>
+
+    <br>
+    <br>
 
 
     </div>
@@ -771,7 +986,44 @@
     <div id="phan6" class="collapse">
 
 
+        <p><b>1. Phương pháp điều trị</b></p>
 
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="theodoi">
+            <label class="custom-control-label" for="theodoi">Theo dõi định kì</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="phauthuat">
+            <label class="custom-control-label" for="phauthuat">Phẫu thuật</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="hoachat">
+            <label class="custom-control-label" for="h3">Hóa chất</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="xatri">
+            <label class="custom-control-label" for="xatri">Xạ trị</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="hoatri">
+            <label class="custom-control-label" for="hoatri">Hóa chất, xạ trị phối hợp</label>
+        </div>
+
+
+        <p><b>2. Đáp ứng điêu trị</b></p>
+
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="hoantoan">
+            <label class="custom-control-label" for="hoantoan">Hoàn toàn</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="motphan">
+            <label class="custom-control-label" for="motphan">Đáp ứng một phần</label>
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="kodapung">
+            <label class="custom-control-label" for="kodapung">Không đáp ứng</label>
+        </div>
 
 
 
